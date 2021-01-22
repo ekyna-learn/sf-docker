@@ -29,6 +29,10 @@ Add these environment variables into your symfony __.env__ (and .env.local) file
     MYSQL_DATABASE=sf-project
     ###< docker ###
 
+    ###> doctrine/doctrine-bundle ###
+    DATABASE_URL="mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:3306/${MYSQL_DATABASE}?serverVersion=5.7"
+    ###< doctrine/doctrine-bundle ###
+
 _COMPANY_NAME_ is used to prefix containers images names. 
 
 Fix _manage.sh_ file permission :
