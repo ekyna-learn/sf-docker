@@ -71,7 +71,7 @@ Composer() {
 }
 
 DockerCompose() {
-  env $(egrep -v '^#' .env.local | xargs) docker-compose -f "${COMPOSE_FILES}" "$@"
+  docker-compose --env-file=./.env.local -f "${COMPOSE_FILES}" "$@"
 }
 
 case $1 in

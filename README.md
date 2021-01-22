@@ -37,7 +37,7 @@ _COMPANY_NAME_ is used to prefix containers images names.
 
 Fix _manage.sh_ file permission :
 
-    git update-index --chmod="+" ./manage.sh
+    git update-index --chmod="+x" ./manage.sh
 
 ## Usage
 

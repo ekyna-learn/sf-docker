@@ -31,7 +31,6 @@ services:
             default:
                 aliases:
                     - nginx
-                    - ${VIRTUAL_HOST}
 
     php:
         container_name: ${PROJECT_NAME}_php
